@@ -1,0 +1,9 @@
+[package]
+name = "salut"
+version = "0.1.0"
+authors = ["Jack MapelLentz"]
+description = "say hi and bye to your computer"
+edition = "2021"
+
+[dependencies]
+clap = { version = "4.5.4", features = ["derive"] }
