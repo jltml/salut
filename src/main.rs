@@ -84,6 +84,7 @@ fn run_command(cmd: &str) {
 
 fn pull() {
     println!("{}", "Hi, welcome back!".dim());
+    run_command("chezmoi update --apply=false");
     run_command("chezmoi apply ~/Brewfile --force");
     run_command("brew bundle install");
     run_command("return 1");
